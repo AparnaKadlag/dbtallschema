@@ -36,19 +36,17 @@ models:
     1_RAW:
         BOOKINGSTUDIO:
             +materialized: table
-              schema:RAW
+             
     2_STANDARD:
         BOOKINGSTUDIO:
             +materialized: view
-              schema:STANDARD
+              
     
     3_CLEANSED:
         BOOKINGSTUDIO:
             +materialized: view
-              schema:CLEANSED
+              
     4_FEATURIZ:
         BOOKINGSTUDIO:
-            +materialized: view
-              schema:FEATURIZ
-
-    
+            +materialized: table
+             
