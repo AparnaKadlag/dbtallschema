@@ -18,6 +18,10 @@
 
 {% if temprature <65 %}
     Time for a abx
+    {% set temprature = 65 %}
+    {{ temprature }}
 {% else %}
+    {% set temprature = 45 %}
     Time for a breq
+    {{ temprature }}
 {% endif %}
